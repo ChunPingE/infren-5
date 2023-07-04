@@ -13,7 +13,6 @@ public class ItemValidator implements Validator {
     public boolean supports(Class<?> clazz) {
         return Item.class.isAssignableFrom(clazz);
     }
-
     @Override
     public void validate(Object target, Errors errors) {
         Item item = (Item) target;
